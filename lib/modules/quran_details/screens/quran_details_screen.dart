@@ -154,7 +154,7 @@ class _QuranDetailsScreenState extends State<QuranDetailsScreen> {
     );
   }
 
-  void readFile(String id) async {
+  Future<void> readFile(String id) async {
     String data = await rootBundle.loadString("assets/suras/${id}.txt");
     data = data.trim();
     verses = data.split("\n");

@@ -4,14 +4,17 @@ import 'package:islamic_c14_sun/core/routes/app_routes_name.dart';
 
 class SuraCardWidget extends StatelessWidget {
   final SuraData suraData;
-  const SuraCardWidget({super.key, required this.suraData});
+  final void Function(SuraData) onTap;
+  const SuraCardWidget({super.key, required this.suraData,required this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
+        onTap(suraData);
         Navigator.pushNamed(context, AppRoutesName.quranDetails,
             arguments: suraData);
+
       },
       child: Padding(
         padding: const EdgeInsets.all(8.0),

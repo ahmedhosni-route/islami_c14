@@ -38,6 +38,7 @@ dependencies:
   animate_do: ^4.2.0
   flutter_svg: ^2.0.17
   shared_preferences: ^2.5.3
+  carousel_slider: ^5.0.0
 
 dev_dependencies:
   flutter_test:
@@ -69,6 +70,7 @@ flutter:
     - assets/icons/
     - assets/images/
     - assets/suras/
+    - assets/ahadeth.txt
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

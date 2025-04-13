@@ -12,8 +12,7 @@ class MostRecentlyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.pushNamed(context, AppRoutesName.quranDetails,
-            arguments: data);
+        Navigator.pushNamed(context, AppRoutesName.quranDetails, arguments: data);
       },
       child: Container(
         padding: const EdgeInsets.all(8),
